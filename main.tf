@@ -18,10 +18,10 @@ resource helm_release helloiks {
   namespace = "default"
   chart = "https://prathjan.github.io/helm-chart/helloiks-0.1.0.tgz"
 
-#  set {
-#    name  = "iwoServerVersion"
-#    value = "8.0"
-#  }
+  set {
+    name  = "MESSAGE"
+    value = "Hello IKS from TFCB!!"
+  }
 }
 
 provider "helm" {
