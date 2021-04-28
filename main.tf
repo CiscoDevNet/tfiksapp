@@ -13,7 +13,7 @@ variable "ikswsname" {
   type = string
 }
 
-resource helm_release helloiks {
+resource helm_release helloiksfrtfcb {
   name       = "iksapp"
   namespace = "default"
   chart = "https://prathjan.github.io/helm-chart/helloiks-0.1.0.tgz"
