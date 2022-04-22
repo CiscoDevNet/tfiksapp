@@ -17,6 +17,7 @@ resource helm_release helloiksfrtfcb {
   name       = "helloiksapp"
   namespace = "default"
   chart = "https://prathjan.github.io/helm-chart/helloiks-0.1.1.tgz"
+  timeout = 600
 
   set {
     name  = "MESSAGE"
